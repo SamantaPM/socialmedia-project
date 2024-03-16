@@ -1,0 +1,337 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MainLayout /> tests: should render MainLayout correctly 1`] = `
+<div
+  className="flex flex-col md:flex-row bg-gray-50"
+>
+  <div
+    className="hidden md:flex  flex-initial h-screen"
+  >
+    <div
+      className="md:flex bg-white flex-col h-full overflow-y-scroll hide-scrollbar min-w-210"
+    >
+      <a
+        className="flex w-190 my-6 px-5"
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          className="w-full"
+          src="logo.png"
+        />
+      </a>
+      <div
+        className="flex gap-4 flex-col"
+      >
+        <a
+          aria-current="page"
+          className="flex items-center gap-3 px-5 capitalize text-black font-extrabold border-r-2 border-black  transition-all duration-200 ease-in-out"
+          href="/"
+          onClick={[Function]}
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 19.9997C21 20.552 20.5523 20.9997 20 20.9997H4C3.44772 20.9997 3 20.552 3 19.9997V9.48882C3 9.18023 3.14247 8.88893 3.38606 8.69947L11.3861 2.47725C11.7472 2.19639 12.2528 2.19639 12.6139 2.47725L20.6139 8.69947C20.8575 8.88893 21 9.18023 21 9.48882V19.9997Z"
+            />
+          </svg>
+          Home
+        </a>
+        <h3
+          className="px-5 text-base font-semibold 2xl:text-xl"
+        >
+          Discovery Categories
+        </h3>
+        <a
+          className="flex items-center gap-3 px-5 capitalize text-gray-500 hover:text-black"
+          href="/category/cars"
+          onClick={[Function]}
+        >
+          <img
+            className="w-8 h-8 rounded-full shadow-sm "
+            src="https://i.pinimg.com/750x/eb/47/44/eb4744eaa3b3ccd89749fa3470e2b0de.jpg"
+          />
+          cars
+        </a>
+        <a
+          className="flex items-center gap-3 px-5 capitalize text-gray-500 hover:text-black"
+          href="/category/fitness"
+          onClick={[Function]}
+        >
+          <img
+            className="w-8 h-8 rounded-full shadow-sm "
+            src="https://i.pinimg.com/236x/25/14/29/251429345940a47490cc3d47dfe0a8eb.jpg"
+          />
+          fitness
+        </a>
+        <a
+          className="flex items-center gap-3 px-5 capitalize text-gray-500 hover:text-black"
+          href="/category/wallpaper"
+          onClick={[Function]}
+        >
+          <img
+            className="w-8 h-8 rounded-full shadow-sm "
+            src="https://i.pinimg.com/236x/03/48/b6/0348b65919fcbe1e4f559dc4feb0ee13.jpg"
+          />
+          wallpaper
+        </a>
+        <a
+          className="flex items-center gap-3 px-5 capitalize text-gray-500 hover:text-black"
+          href="/category/websites"
+          onClick={[Function]}
+        >
+          <img
+            className="w-8 h-8 rounded-full shadow-sm "
+            src="https://i.pinimg.com/750x/66/b1/29/66b1296d36598122e6a4c5452b5a7149.jpg"
+          />
+          websites
+        </a>
+        <a
+          className="flex items-center gap-3 px-5 capitalize text-gray-500 hover:text-black"
+          href="/category/photo"
+          onClick={[Function]}
+        >
+          <img
+            className="w-8 h-8 rounded-full shadow-sm "
+            src="https://i.pinimg.com/236x/72/8c/b4/728cb43f48ca762a75da645c121e5c57.jpg"
+          />
+          photo
+        </a>
+        <a
+          className="flex items-center gap-3 px-5 capitalize text-gray-500 hover:text-black"
+          href="/category/food"
+          onClick={[Function]}
+        >
+          <img
+            className="w-8 h-8 rounded-full shadow-sm "
+            src="https://i.pinimg.com/236x/7d/ef/15/7def15ac734837346dac01fad598fc87.jpg"
+          />
+          food
+        </a>
+        <a
+          className="flex items-center gap-3 px-5 capitalize text-gray-500 hover:text-black"
+          href="/category/nature"
+          onClick={[Function]}
+        >
+          <img
+            className="w-8 h-8 rounded-full shadow-sm "
+            src="https://i.pinimg.com/236x/b9/82/d4/b982d49a1edd984c4faef745fd1f8479.jpg"
+          />
+          nature
+        </a>
+        <a
+          className="flex items-center gap-3 px-5 capitalize text-gray-500 hover:text-black"
+          href="/category/art"
+          onClick={[Function]}
+        >
+          <img
+            className="w-8 h-8 rounded-full shadow-sm "
+            src="https://i.pinimg.com/736x/f4/e5/ba/f4e5ba22311039662dd253be33bf5f0e.jpg"
+          />
+          art
+        </a>
+        <a
+          className="flex items-center gap-3 px-5 capitalize text-gray-500 hover:text-black"
+          href="/category/travel"
+          onClick={[Function]}
+        >
+          <img
+            className="w-8 h-8 rounded-full shadow-sm "
+            src="https://i.pinimg.com/236x/fa/95/98/fa95986f2c408098531ca7cc78aee3a4.jpg"
+          />
+          travel
+        </a>
+        <a
+          className="flex items-center gap-3 px-5 capitalize text-gray-500 hover:text-black"
+          href="/category/quotes"
+          onClick={[Function]}
+        >
+          <img
+            className="w-8 h-8 rounded-full shadow-sm "
+            src="https://i.pinimg.com/236x/46/7c/17/467c17277badb00b638f8ec4da89a358.jpg"
+          />
+          quotes
+        </a>
+        <a
+          className="flex items-center gap-3 px-5 capitalize text-gray-500 hover:text-black"
+          href="/category/cats"
+          onClick={[Function]}
+        >
+          <img
+            className="w-8 h-8 rounded-full shadow-sm "
+            src="https://i.pinimg.com/236x/6c/3c/52/6c3c529e8dadc7cffc4fddedd4caabe1.jpg"
+          />
+          cats
+        </a>
+        <a
+          className="flex items-center gap-3 px-5 capitalize text-gray-500 hover:text-black"
+          href="/category/dogs"
+          onClick={[Function]}
+        >
+          <img
+            className="w-8 h-8 rounded-full shadow-sm "
+            src="https://i.pinimg.com/236x/1b/c8/30/1bc83077e363db1a394bf6a64b071e9f.jpg"
+          />
+          dogs
+        </a>
+        <a
+          className="flex items-center gap-3 px-5 capitalize text-gray-500 hover:text-black"
+          href="/category/others"
+          onClick={[Function]}
+        >
+          <img
+            className="w-8 h-8 rounded-full shadow-sm "
+            src="https://i.pinimg.com/236x/2e/63/c8/2e63c82dfd49aca8dccf9de3f57e8588.jpg"
+          />
+          others
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="flex flex-row"
+  >
+    <div
+      className="flex flex-row w-full justify-between items-center px-2 md:hidden bg-white shadow-md"
+    >
+      <svg
+        className="hover:cursor-pointer"
+        fill="currentColor"
+        fontSize={40}
+        height="1em"
+        onClick={[Function]}
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"
+        />
+      </svg>
+      <a
+        className="w-190 my-6 px-5"
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          src="logo.png"
+        />
+      </a>
+      <a
+        href="/user-profile/undefined"
+        onClick={[Function]}
+      >
+        <img
+          className="w-12 h-12 block rounded-full"
+        />
+      </a>
+    </div>
+  </div>
+  <div
+    className="flex flex-col flex-1 h-screen pb-2 overflow-y-scroll"
+  >
+    <div
+      className="px-2 md:px-5"
+    >
+      <div
+        className="flex mt-5 pb-7 gap-2 md:gap-5"
+      >
+        <div
+          className="flex flex-1 gap-2 items-center text-black bg-white px-3 focus-within:shadow-sm rounded-md"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"
+            />
+          </svg>
+          <input
+            className="w-full text-black hover:text-black outline-none"
+            id="searchInput"
+            name="searchInput"
+            onKeyDown={[Function]}
+            placeholder="Search"
+            type="search"
+          />
+        </div>
+        <div
+          className="flex flex-initial justify-center md:flex-row gap-3"
+        >
+          <a
+            className="hidden md:block text-white  shadow-sm"
+            href="/user-profile/undefined"
+            onClick={[Function]}
+          >
+            <img
+              alt="User Avatar"
+              className="w-14 h-12 rounded-lg "
+            />
+          </a>
+          <a
+            className="flex items-center justify-center bg-black text-white rounded-lg shadow-sm md:w-14 h-12 w-12"
+            href="/create-pin"
+            onClick={[Function]}
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 1024 1024"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+              />
+              <path
+                d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        className="h-full"
+      />
+    </div>
+  </div>
+</div>
+`;
