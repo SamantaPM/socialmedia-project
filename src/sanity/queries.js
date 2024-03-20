@@ -161,3 +161,8 @@ export const getUserSavedPins = (userId) => {
   }`;
   return query;
 };
+
+export const getUserData = (userId) => {
+  const query = `*[_type == "user" && _id == '${userId}']`;
+  return query;
+};

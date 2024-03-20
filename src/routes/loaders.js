@@ -1,4 +1,4 @@
-import { fetchPins } from '../sanity/client';
+import { fetchPins, fetchUser } from '../sanity/client';
 import { defer } from 'react-router-dom';
 
 export const loaderFeed = () => {
@@ -29,8 +29,11 @@ export const loaderPin = ({ params }) => {
 };
 
 export const loaderProfileFeed = async ({ params }) => {
-  const created = await fetchPins('CREATED_PINS', params.userId);
-  const saved = await fetchPins('SAVED_PINS', params.userId);
+  const [created, saved, [userData]] = await Promise.all([
+    fetchPins('CREATED_PINS', params.userId),
+    fetchPins('SAVED_PINS', params.userId),
+    fetchUser(params.userId)
+  ]);
 
-  return ({ created, saved });
+  return ({ created, saved, userData });
 };

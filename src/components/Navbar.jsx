@@ -28,7 +28,7 @@ const Navbar = () => {
       </div>
       <div className="flex flex-initial justify-center md:flex-row gap-3">
         <NavLink to={`/user-profile/${userProfile?._id}`} className="hidden md:block text-white  shadow-sm">
-          <img src={userProfile?.image} alt='User Avatar' className='w-14 h-12 rounded-lg '/>
+          <img src={userProfile?.image} alt='User Avatar' className='w-auto h-12 rounded-lg '/>
         </NavLink>
 
         <NavLink to="/create-pin" className="flex items-center justify-center bg-black text-white rounded-lg shadow-sm md:w-14 h-12 w-12">

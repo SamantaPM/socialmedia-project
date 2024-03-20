@@ -6,7 +6,8 @@ import {
   getPinDetail,
   getSearchPins,
   getUserCreatedPins,
-  getUserSavedPins
+  getUserSavedPins,
+  getUserData
 } from './queries';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -58,6 +59,14 @@ export const createPin = ({ title, about, destination, category, image, user }) 
   return client.create(doc);
 };
 
+export const saveComment = ({ pinId, comment, userProfile }) => {
+  return client
+    .patch(pinId)
+    .setIfMissing({ comments: [] })
+    .insert('after', 'comments[-1]', [{ comment, _key: uuidv4(), postedBy: { _type: 'postedBy', _ref: userProfile._id } }])
+    .commit();
+};
+
 export const savePin = (id, user, postedBy) => {
   return client.patch(id)
     .setIfMissing({ save: [] })
@@ -76,7 +85,7 @@ export const deletePin = (id) => {
   return client.delete(id);
 };
 
-export const fetchPins = async (query = 'ALL', params) => {
+export const fetchPins = (query = 'ALL', params) => {
   let fullQuery = '';
   switch (query) {
     case 'PIN':
@@ -98,5 +107,10 @@ export const fetchPins = async (query = 'ALL', params) => {
       fullQuery = getAllPins();
   }
 
-  return await client.fetch(fullQuery);
+  return client.fetch(fullQuery);
+};
+
+export const fetchUser = (userId) => {
+  const query = getUserData(userId);
+  return client.fetch(query);
 };

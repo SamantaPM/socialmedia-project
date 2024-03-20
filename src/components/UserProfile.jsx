@@ -12,7 +12,7 @@ const UserProfile = () => {
   const navigate = useNavigate();
   const { userProfile, removeUser } = useAuthStore();
   const { userId } = useParams();
-  const { created, saved } = useLoaderData();
+  const { created, saved, userData } = useLoaderData();
   const [pins, setPins] = useState(created);
   const [activeBtn, setActiveBtn] = useState('created');
   const [loading, setLoading] = useState(false);
@@ -44,8 +44,8 @@ const UserProfile = () => {
         </div>
         <div className='flex flex-col items-center gap-4'>
 
-          <img src={userProfile?.image} alt='User Image' className='rounded-full w-20 h-20 -mt-10 shadow-xl object-cover'/>
-          <h1 className='font-bold text-3xl text-center mb-3'>{userProfile?.username}</h1>
+          <img src={userData?.image} alt='User Image' className='rounded-full w-20 h-20 -mt-10 shadow-xl object-cover'/>
+          <h1 className='font-bold text-3xl text-center mb-3'>{userData?.username}</h1>
           <div className="absolute top-0 z-1 right-0 p-2">
             {userId === userProfile?._id && (
               <button
