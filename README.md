@@ -13,6 +13,10 @@ Welcome to the Social Media Project! This project is aimed at creating a basic s
 
 Social Media Project is a web application developed using [React](https://reactjs.org/), [Zustand](https://zustand.surge.sh/), and [TailwindCSS](https://tailwindcss.com/). It provides a platform where users can register, create profiles and share posts.
 
+## Demo Project
+
+Url: https://shareme-app-bydevpm.netlify.app/
+
 ## Features
 
 - User authentication and authorization.
